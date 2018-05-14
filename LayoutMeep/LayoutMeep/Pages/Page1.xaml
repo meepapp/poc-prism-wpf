@@ -1,0 +1,20 @@
+﻿<Page x:Class="LayoutMeep.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LayoutMeep"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Page1" Height="1336" Width="1336">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Images/bgmeep.jpg" Stretch="UniformToFill"></ImageBrush>
+        </Grid.Background>
+        <StackPanel>
+            <Image Source="c:/users/meep/desktop/MeepImages/logomeep1B.png" Height="550"  />
+            <Label Style="{StaticResource LabelCompreAqui}" Content="COMPRE AQUI SEU PRODUTO" VerticalAlignment="Top" Height="152" HorizontalAlignment="Center" />
+            <Button Style="{StaticResource BotaoComprar}"  Content="Comprar" VerticalAlignment="Top" Height="96" Margin="518,0"/>
+        </StackPanel>
+    </Grid>
+</Page>

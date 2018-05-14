@@ -1,0 +1,7 @@
+C:\Users\meep\source\repos\LayoutMeep\LayoutMeep\obj\Debug\LayoutMeep.csprojResolveAssemblyReference.cache
+C:\Users\meep\source\repos\LayoutMeep\LayoutMeep\obj\Debug\MainWindow.g.cs
+C:\Users\meep\source\repos\LayoutMeep\LayoutMeep\obj\Debug\Pages\Page1.g.cs
+C:\Users\meep\source\repos\LayoutMeep\LayoutMeep\obj\Debug\Pages\Page2.g.cs
+C:\Users\meep\source\repos\LayoutMeep\LayoutMeep\obj\Debug\App.g.cs
+C:\Users\meep\source\repos\LayoutMeep\LayoutMeep\obj\Debug\LayoutMeep_MarkupCompile.cache
+C:\Users\meep\source\repos\LayoutMeep\LayoutMeep\obj\Debug\LayoutMeep_MarkupCompile.lref
