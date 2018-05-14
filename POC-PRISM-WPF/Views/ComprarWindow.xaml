@@ -1,0 +1,102 @@
+﻿<Page x:Class="POC_PRISM_WPF.Views.ComprarWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:POC_PRISM_WPF.Views"
+      mc:Ignorable="d" 
+      Title="Comprar - Meep"
+      x:Name="Root">
+
+    <Grid>
+        <Grid Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0">
+                <Menu Height="30" Background="AliceBlue" HorizontalAlignment="Stretch">
+                    <Menu.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                            </Grid>
+                        </ItemsPanelTemplate>
+                    </Menu.ItemsPanel>
+                    <MenuItem Foreground ="#ef4051" Header="Configurações" Grid.Column="2" HorizontalAlignment="Right" Margin="10,0,115,0">
+                        <MenuItem  FontSize="30" Header="Histórico" 
+                                   Command="{Binding NavigateToHistoryCommand}" CommandParameter="{Binding ElementName=Root}" />
+
+
+                        <MenuItem  Command="{Binding NavigateToConfigurationCommand}" FontSize="30" 
+                                   Header="Configuração" CommandParameter="{Binding ElementName=Root}" />
+                        
+                    </MenuItem>
+                </Menu>
+            </StackPanel>
+            <Grid VerticalAlignment="Center" Grid.Row="1" IsEnabled="{Binding IsPageEnabled} ">
+                <StackPanel VerticalAlignment="Stretch">
+                    <Image HorizontalAlignment="Center" Source="/Images/meep.png" Height="120"/>
+                    <GridSplitter Height="100"/>
+                    <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Foreground="Red" Text="COMPRE AQUI" FontSize="35"/>
+                    <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Padding="0,0,0,10" Foreground="Red" Text="SEUS PRODUTOS!" FontSize="35"/>
+                </StackPanel>
+            </Grid>
+            <Grid VerticalAlignment="Center" Grid.Row="2">
+                <StackPanel VerticalAlignment="Stretch">
+                    <StackPanel Name="ButtoBuyMeepCard">
+                        <Button Style= "{ StaticResource ButtonSuccess}" HorizontalAlignment="Center"
+                                Height="70" Width="350" CommandParameter="{Binding ElementName=Root}">
+                            <!--Command="{Binding Path=BuyBalanceCommand, Mode=OneWay}"
+                                CommandParameter="{Binding ElementName=root}" -->
+                            <TextBlock FontSize="25" Text="Comprar com MeepCard"/>
+                        </Button>
+                        <GridSplitter Height="50"/>
+                    </StackPanel>
+                    <StackPanel Name="ButtonBuyCreditOrDebit">
+                        <Button  Style="{StaticResource ButtonGreen}" HorizontalAlignment="Center"
+                                Command="{Binding Path=BuyCommand, Mode=OneWay}"
+                                CommandParameter="{Binding ElementName=Root}"
+                                Height="70" Width="350">
+                            <TextBlock FontSize="25" Text="Comprar Crédito/Débito" />
+                        </Button>
+                        <GridSplitter Height="50" />
+                    </StackPanel>
+
+                    <StackPanel Name="ButtonRecharge">
+                        <Button Style="{ StaticResource ButtonSuccess}" HorizontalAlignment="Center"
+                                Command="{Binding Path=RechargeCommand, Mode=OneWay}"
+                                CommandParameter="{Binding ElementName=root}"
+                                Height="70" Width="350">
+                            <TextBlock FontSize="25" Text="Recarregar Meep Cashless" />
+                        </Button>
+                        <GridSplitter Height="50" />
+                    </StackPanel>
+
+                    <StackPanel Name="ButtonActivate">
+                        <Button Style="{ StaticResource ButtonSuccess}" HorizontalAlignment="Center"
+                                Command="{Binding Path=ActivateCommand, Mode=OneWay}"
+                                CommandParameter="{Binding ElementName=root}"
+                                Height="70" Width="350">
+                            <TextBlock FontSize="25" Text="Ativar Meep Cashless" />
+                        </Button>
+                        <GridSplitter Height="50" />
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <!--<Grid VerticalAlignment="Center" Panel.ZIndex="4">
+            <ctr:LoadingPanel x:Name="progressDialog"
+                              IsLoading="{Binding ShowProgressDialog}"
+                              Message="{Binding ProgressDialogMessage}"
+                              SubMessage="{Binding ProgressDialogSubMessage}"
+                              Imagem="{Binding ProgressDialogImage}"
+                              ClosePanelCommand="{Binding CloseProgressDialogCommand}" />
+        </Grid>-->
+    </Grid>
+</Page>
