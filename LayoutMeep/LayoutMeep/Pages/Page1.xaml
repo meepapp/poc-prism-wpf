@@ -12,7 +12,7 @@
             <ImageBrush ImageSource="../Images/bgmeep.jpg" Stretch="UniformToFill"></ImageBrush>
         </Grid.Background>
         <StackPanel>
-            <Image Source="../Images/logomeep1B.png" Height="550"  />
+            <Image Source="../Images/logomeep1B.png" Height="511"  />
             <Label Style="{StaticResource LabelCompreAqui}" Content="COMPRE AQUI SEU PRODUTO" VerticalAlignment="Top" Height="152" HorizontalAlignment="Center" />
             <Button Style="{StaticResource BotaoComprar}"  Content="Comprar" VerticalAlignment="Top" Height="96"  />
         </StackPanel>
