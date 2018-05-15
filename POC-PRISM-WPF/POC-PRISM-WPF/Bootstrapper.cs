@@ -13,11 +13,7 @@ namespace POC_PRISM_WPF
             return Container.Resolve<NavigationWindowView>();
         }
 
-        protected override void InitializeShell()
-        {
-            Application.Current.MainWindow.Show();
-        }
-
+    
         protected override void ConfigureModuleCatalog()
         {
             var moduleCatalog = (ModuleCatalog)ModuleCatalog;

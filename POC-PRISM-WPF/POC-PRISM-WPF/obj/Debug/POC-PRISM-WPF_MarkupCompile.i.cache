@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\ws\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\
+C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\
 POC_PRISM_WPF
 none
 false
 DEBUG;TRACE
-C:\ws\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\App.xaml
+C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\App.xaml
 5518140834
 
 14-342481505
-72447574857
+74-1488933109
 Resources\LayoutResources.xaml;Views\ComprarWindowView.xaml;Views\ConfirmarPagamentoView.xaml;Views\NavigationWindowView.xaml;Views\VendaPageView.xaml;
 
-False
+True
 

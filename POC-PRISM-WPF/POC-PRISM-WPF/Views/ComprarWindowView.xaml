@@ -10,49 +10,28 @@
     <Grid>
         <Grid Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <Grid.RowDefinitions>
-                <RowDefinition Height="30"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="600"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <!--<Grid.Background>
                 <ImageBrush ImageSource="../Images/meepBackground.png" Stretch="UniformToFill"></ImageBrush>
             </Grid.Background>-->
-            <Grid VerticalAlignment="Center" Grid.Row="1"  IsEnabled="{Binding IsPageEnabled}">
+            <Grid VerticalAlignment="Center" Grid.Row="1">
                 <StackPanel VerticalAlignment="Stretch">
-                    <Image HorizontalAlignment="Center" Source="/Images/meep.png" Height="120"  />
+                    <Image HorizontalAlignment="Center" Source="../Images/logo.png" Height="120" Width="310"  />
                     <GridSplitter Height="100"/>
-                    <Label  Style="{StaticResource LabelCompreAqui}" Foreground="Red" Content="COMPRE AQUI" FontSize="35" Height="62" Padding="0,20,0,0"/>
-                    <Label  Style="{StaticResource LabelCompreAqui}" Foreground="Red" Content="SEUS PRODUTOS!" FontSize="35" Height="62" />
-                    <GridSplitter Height="7"></GridSplitter>
+                    <Label  Style="{StaticResource LabelCompreAqui}" Foreground="white" Content="COMPRE AQUI O SEU PRODUTO" FontSize="20" Height="62" />
+                    <GridSplitter Height="7"/>
                 </StackPanel>
-                
+
             </Grid>
             <Grid VerticalAlignment="Center" Grid.Row="2">
-                <StackPanel VerticalAlignment="Stretch">
-                    <StackPanel Name="ButtonBuyCreditOrDebit">
-                        <Button Style="{StaticResource ButtonSuccess}" Height="70" Width="370" >
-                            <TextBlock FontSize="25" Text="Comprar com Crédito/Débito"/>
-                        </Button>
-                        <GridSplitter Height="20"/>
-                    </StackPanel>
+                <StackPanel VerticalAlignment="Center">
 
-                    <StackPanel Name="ButtonBuyMeepCashless">
+                    <StackPanel Name="ButtonBuy">
                         <Button Style="{StaticResource ButtonSuccess}" Height="70" Width="370">
-                            <TextBlock FontSize="25" Text="Comprar com Meep Cashless"></TextBlock>
-                        </Button>
-                        <GridSplitter Height="20"/>
-                    </StackPanel>
-
-                    <StackPanel Name="ButtonRechargeMeepCashless">
-                        <Button Style="{StaticResource ButtonSuccess}" Height="70" Width="370">
-                            <TextBlock FontSize="25" Text="Recarregar Meep Cashless"></TextBlock>
-                        </Button>
-                        <GridSplitter Height="20"/>
-                    </StackPanel>
-
-                    <StackPanel Name="ButtonActivateMeepCashless">
-                        <Button Style="{StaticResource ButtonSuccess}" Height="70" Width="370">
-                            <TextBlock FontSize="25" Text="Ativar Meep Cashless"></TextBlock>
+                            <TextBlock FontSize="25" Text="Comprar"></TextBlock>
                         </Button>
                         <GridSplitter Height="20"/>
                     </StackPanel>

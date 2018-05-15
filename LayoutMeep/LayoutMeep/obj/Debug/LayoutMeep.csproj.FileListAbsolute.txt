@@ -32,3 +32,4 @@ C:\WS\poc-prism-wpf\LayoutMeep\LayoutMeep\obj\Debug\LayoutMeep.csproj.CoreCompil
 C:\WS\poc-prism-wpf\LayoutMeep\LayoutMeep\obj\Debug\LayoutMeep.csproj.CopyComplete
 C:\WS\poc-prism-wpf\LayoutMeep\LayoutMeep\obj\Debug\LayoutMeep.exe
 C:\WS\poc-prism-wpf\LayoutMeep\LayoutMeep\obj\Debug\LayoutMeep.pdb
+C:\WS\poc-prism-wpf\LayoutMeep\LayoutMeep\obj\Debug\LayoutMeep.csprojResolveAssemblyReference.cache
