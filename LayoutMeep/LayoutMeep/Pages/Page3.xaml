@@ -5,34 +5,55 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:LayoutMeep.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="1336" d:DesignWidth="1336"
+      d:DesignHeight="1336" d:DesignWidth="768"
       Title="Page3">
 
     <Grid Background="White">
 
-        <StackPanel Background="#ef4051" Orientation="Horizontal" HorizontalAlignment="Center" Height="140" VerticalAlignment="Top" Width="1336">
-            <Image Source="../images/logo.png" HorizontalAlignment="Right"  Width="268" Margin="50,10,0,0"/>
+        <StackPanel Background="#ef4051" Orientation="Horizontal" HorizontalAlignment="Center" Height="56" VerticalAlignment="Top" Width="768">
+            <Image Source="../images/logo.png" HorizontalAlignment="Left" VerticalAlignment="Center"  Width="196" Height="56"/>
         </StackPanel>
-        <StackPanel Background="#ef4051" Orientation="Horizontal" HorizontalAlignment="Center" Height="100" VerticalAlignment="Bottom" Width="1336">
-            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Width="1336">
+        <StackPanel Background="#ef4051" Orientation="Horizontal" HorizontalAlignment="Center" Height="52" VerticalAlignment="Bottom" Width="768">
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Width="768">
                 <Separator Background="Transparent" Width="30"/>
-                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#ed911b" Content="LIMPAR PEDIDO" Width="250" Height="80"/>
-                <Separator Background="Transparent" Width="775"/>
-                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#30a658" Content="VER PEDIDO" Width="250" Height="80"/>
+                <Button Style="{StaticResource ButtonsBottomMenu}" VerticalAlignment="Center" Background="#ed911b" Content="LIMPAR PEDIDO" Width="169" Height="40" />
+                <Separator Background="Transparent" Width="370"/>
+                <Button Style="{StaticResource ButtonsBottomMenu}" VerticalAlignment="Center" Background="#30a658" Content="FINALIZAR" Width="169" Height="40" />
+                <Separator Background="Transparent" HorizontalAlignment="Right" Width="30"/>
             </StackPanel>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Center" Height="172"  Width="1336" Margin="0,140,0,1024">
-            <Label Style="{StaticResource TotalPg3}" HorizontalContentAlignment="Center" Content="Total:"/>
-            <Label FontSize="70" HorizontalAlignment="Center" Content="X"/>
+        <StackPanel HorizontalAlignment="Center"  Width="748" Margin="10,56,10,1192">
+            <Label Style="{StaticResource TotalPg3}" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Content="Total:"/>
+            <Label FontSize="30" HorizontalAlignment="Center" Content="X"/>
         </StackPanel>
-        <StackPanel Background="#FFEF4051" HorizontalAlignment="Center" Height="80" Margin="0,317,0,0" VerticalAlignment="Top" Width="1336">
-            <Label FontWeight="DemiBold" Style="{StaticResource ResourceKey=TotalPg3-2}" Content="Confira aqui seu método de pagamento e sua lista de produtos." VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Width="1316" Margin="10,0" Height="80"/>
+        <StackPanel Background="#FFEF4051" HorizontalAlignment="Center" Height="52" Margin="0,144,0,0" VerticalAlignment="Top" Width="768">
+            <Label FontWeight="DemiBold" Style="{DynamicResource ResourceKey=TotalPg3-2}" Content="Confira aqui seu método de pagamento e sua lista de produtos." VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="52"/>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Height="70" Margin="50,397,50,0" VerticalAlignment="Top">
-            <Label Style="{StaticResource LabelPg3}" Content="CARTÃO SELECIONADO" />
-            <Label Style="{StaticResource LabelPg3}" Content="CRÉDITO"/>
-            <Button Style="{StaticResource MaterialDesignFlatButton}" Content="Alterar pagamento" Height="Auto" Width="255" Foreground="#FFD1362E" FontSize="25"/>
+        <StackPanel Orientation="Horizontal" Height="35" Margin="30,206,307,0" VerticalAlignment="Top">
+            <Label Style="{StaticResource LabelPg3}" Content="CARTÃO SELECIONADO" Width="181" />
+            <Label Style="{StaticResource LabelPg3}" Content="CRÉDITO" Width="75"/>
+            <Button Style="{StaticResource MaterialDesignFlatButton}" Content="Alterar pagamento" Height="Auto" Width="175" Foreground="#FFD1362E" FontSize="16"/>
 
         </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="62" Margin="30,246,0,0" VerticalAlignment="Top" Width="295">
+            <Button Style="{StaticResource RoundButtonTemplate}" FontSize="20" Background="Black" Content="IMAGEM" HorizontalAlignment="Left"  Width="60" />
+            <Separator Background="Transparent" Width="15"  />
+            <Button Style="{StaticResource RoundButtonTemplate}" FontSize="20" Background="Black" Content="IMAGEM" HorizontalAlignment="Left"  Width="60" />
+
+            <Separator Background="Transparent" Width="15"  />
+            <Button Style="{StaticResource RoundButtonTemplate}" FontSize="20" Background="Black" Content="IMAGEM" HorizontalAlignment="Left"  Width="60" />
+
+            <Separator Background="Transparent" Width="15"  />
+            <Button Style="{StaticResource RoundButtonTemplate}" FontSize="20" Background="Black" Content="IMAGEM" HorizontalAlignment="Left"  Width="60"/>
+
+        </StackPanel>
+        <Label Style="{StaticResource TotalPg3}" Content="PRODUTOS" FontSize="25" FontWeight="DemiBold" HorizontalAlignment="Left" Margin="30,308,0,0" VerticalAlignment="Top" Height="45" Width="140"/>
+        <ListView Height="911" Margin="30,353,30,0" VerticalAlignment="Top">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
     </Grid>
 </Page>

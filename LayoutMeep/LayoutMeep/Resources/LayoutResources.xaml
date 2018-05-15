@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:LayoutMeep.Resources">
     <Style x:Key="LabelCompreAqui" TargetType="Label">
-        <Setter Property="FontSize" Value="40px"/>
+        <Setter Property="FontSize" Value="30"/>
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
     </Style>
@@ -12,9 +12,12 @@
         <Setter Property="Foreground" Value="#b31e21" />
     </Style>
     <Style x:Key="ButtonsBottomMenu" TargetType="Button">
-        <Setter Property="FontSize" Value="20px"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Height"   Value="60"/>
+        <Setter Property="Width"    Value="60" />
     </Style>
     <Style x:Key="RoundButtonTemplate" TargetType="Button">
         <Setter Property="FontSize" Value="35px"/>
@@ -34,12 +37,13 @@
         </Setter>
     </Style>
     <Style x:Key="TotalPg3" TargetType="Label">
-        <Setter Property="FontSize" Value="45px"/>
+        <Setter Property="FontSize" Value="20px"/>
+        <Setter Property="Height" Value="Auto" />
         <Setter Property="Foreground" Value="#FFEF4051"/>
         <Setter Property="FontWeight" Value="Bold"/>
     </Style>
     <Style x:Key="TotalPg3-2" TargetType="Label">
-        <Setter Property="FontSize" Value="30px"/>
+        <Setter Property="FontSize" Value="16"/>
         <Setter Property="Foreground" Value="White"/>
     </Style>
     <Style x:Key="Roboto" TargetType="Label">
@@ -47,9 +51,10 @@
     </Style>
     <Style x:Key="LabelPg3" TargetType="Label">
         <Setter Property="FontWeight" Value="DemiBold" />
-        <Setter Property="FontSize" Value="25" />
+        <Setter Property="FontSize" Value="16" />
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Height" Value="Auto"/>
         <Setter Property="Foreground" Value="#FF1B3F48"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
     </Style>
 </ResourceDictionary>
