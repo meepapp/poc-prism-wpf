@@ -12,7 +12,6 @@ namespace POC_PRISM_WPF
         {
             return Container.Resolve<NavigationWindowView>();
         }
-
     
         protected override void ConfigureModuleCatalog()
         {

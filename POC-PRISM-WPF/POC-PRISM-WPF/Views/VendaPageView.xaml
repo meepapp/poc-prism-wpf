@@ -15,26 +15,27 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <Image Grid.Column="0" Source="../images/logo.png"  Width="268" />
+            <Image Grid.Column="0" Source="../images/logo.png"  Width="268"/>
             <StackPanel Grid.Column="1" />
-            <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <StackPanel Grid.Column="2" Orientation="Horizontal">
                 <Label  Style="{StaticResource LabelCompreAqui}" FontWeight="Bold" VerticalContentAlignment="Center" Content="Total:"/>
-                <Label  Style="{StaticResource LabelCompreAqui}" FontWeight="Bold" Width="100" HorizontalAlignment="Center" VerticalContentAlignment="Center" Content="X"/>
+                <Label  Style="{StaticResource LabelCompreAqui}" FontWeight="Bold" Width="Auto" VerticalContentAlignment="Center" Content="R$1243,40" Padding="5,0,20,0"/>
             </StackPanel>
         </Grid>
-        <Grid Background="#ef4051" Height="100" VerticalAlignment="Bottom">
+        <Grid Background="#ef4051" Height="80" VerticalAlignment="Bottom">
+
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#556372"  Content="SAIR" Height="80" Width="250"/>
+                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#556372" Content="SAIR" Width="200" Height="60"/>
                 <Separator Background="Transparent" Width="30"/>
-                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#ed911b" Content="LIMPAR PEDIDO" Width="250" Height="80"/>
+                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#ed911b" Content="LIMPAR PEDIDO" Width="200" Height="60"/>
                 <Separator Background="Transparent" Width="30"/>
-                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#30a658" Content="VER PEDIDO" Width="250" Height="80"/>
+                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#30a658" Content="VER PEDIDO" Width="200" Height="60"/>
             </StackPanel>
         </Grid>
         <StackPanel HorizontalAlignment="Left" Height="200" Margin="50,200,0,0" VerticalAlignment="Top" Width="400" Orientation="Horizontal">
-            <Button Style="{StaticResource RoundButtonTemplate}" Content="Comidas" Height="200" HorizontalAlignment="Left" Width="180"/>
+            <Button Style="{StaticResource RoundButtonTemplate}" Content="Comidas" Height="190" HorizontalAlignment="Left" Width="170"/>
             <Separator Width="40" Background="Transparent"/>
-            <Button Style="{StaticResource RoundButtonTemplate}" Content="Bebidas" Height="200" HorizontalAlignment="Right" Width="180"/>
+            <Button Style="{StaticResource RoundButtonTemplate}" Content="Bebidas" Height="190" HorizontalAlignment="Right" Width="170"/>
         </StackPanel>
         <ListBox Margin="10,405,10,123">
             <ListBox.ItemsPanel>

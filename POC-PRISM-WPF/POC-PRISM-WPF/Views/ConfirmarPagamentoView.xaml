@@ -29,10 +29,20 @@
             <Label FontWeight="DemiBold" Style="{StaticResource ResourceKey=TotalPg3-2}" Content="Confira aqui seu método de pagamento e sua lista de produtos." VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Width="1316" Margin="10,0" Height="80"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Height="70" Margin="50,397,50,0" VerticalAlignment="Top">
-            <Label Style="{StaticResource LabelPg3}" Content="CARTÃO SELECIONADO" />
-            <Label Style="{StaticResource LabelPg3}" Content="CRÉDITO"/>
+            <Label Style="{StaticResource LabelPg3}" Content="CARTÃO SELECIONADO" FontSize="23" />
+            <Label Style="{StaticResource LabelPg3}" Content="CRÉDITO" FontSize="23" />
             <Button Style="{StaticResource MaterialDesignFlatButton}" Content="Alterar pagamento" Height="Auto" Width="255" Foreground="#FFD1362E" FontSize="25"/>
-
+            <GridSplitter Height="100"/>
         </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="70" Margin="50,467,-50,799">
+            <Image Source="../Images/card_4.png"></Image>
+            <GridSplitter Width="30" Background="Transparent"></GridSplitter>
+            <Image Source="../Images/card_3.png"></Image>
+            <GridSplitter Width="30" Background="Transparent"></GridSplitter>
+            <Image Source="../Images/card_2.png"></Image>
+            <GridSplitter Width="30" Background="Transparent"></GridSplitter>
+            <Image Source="../Images/card_1.png"></Image>
+        </StackPanel>
+
     </Grid>
 </Page>

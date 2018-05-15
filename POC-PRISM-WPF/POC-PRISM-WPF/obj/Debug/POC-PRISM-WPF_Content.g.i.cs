@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/bgmeep.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logomeep1b.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/pilsen.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/card_1.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/card_2.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/card_3.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/card_4.png")]
 
 
