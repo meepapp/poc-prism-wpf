@@ -3,12 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="Meep" Height="600" Width="550" WindowStyle="None" WindowState="Maximized"
+        Title="Meep" Height="1336" Width="768" WindowStyle="None" WindowState="Maximized"
         BorderThickness="1" BorderBrush="Aqua" x:Name="RootNavigation"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Source="ComprarWindowView.xaml">
 
     <Window.Background>
-        <ImageBrush ImageSource="/Images/meepBackground.png" Stretch="UniformToFill"/>
+        <ImageBrush ImageSource="/Images/bgmeep.jpg" Stretch="UniformToFill"/>
     </Window.Background>
 </NavigationWindow>
