@@ -1,0 +1,64 @@
+﻿<Page x:Class="POC_PRISM_WPF.Views.ComprarWindowView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:POC_PRISM_WPF"
+      mc:Ignorable="d" 
+      Title="Comprar - Meep">
+
+    <Grid>
+        <Grid Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <!--<Grid.Background>
+                <ImageBrush ImageSource="../Images/meepBackground.png" Stretch="UniformToFill"></ImageBrush>
+            </Grid.Background>-->
+            <Grid VerticalAlignment="Center" Grid.Row="1"  IsEnabled="{Binding IsPageEnabled}">
+                <StackPanel VerticalAlignment="Stretch">
+                    <Image HorizontalAlignment="Center" Source="/Images/meep.png" Height="120"  />
+                    <GridSplitter Height="100"/>
+                    <Label  Style="{StaticResource LabelCompreAqui}" Foreground="Red" Content="COMPRE AQUI" FontSize="35" Height="62" Padding="0,20,0,0"/>
+                    <Label  Style="{StaticResource LabelCompreAqui}" Foreground="Red" Content="SEUS PRODUTOS!" FontSize="35" Height="62" />
+                    <GridSplitter Height="7"></GridSplitter>
+                </StackPanel>
+                
+            </Grid>
+            <Grid VerticalAlignment="Center" Grid.Row="2">
+                <StackPanel VerticalAlignment="Stretch">
+                    <StackPanel Name="ButtonBuyCreditOrDebit">
+                        <Button Style="{StaticResource ButtonSuccess}" Height="70" Width="370" >
+                            <TextBlock FontSize="25" Text="Comprar com Crédito/Débito"/>
+                        </Button>
+                        <GridSplitter Height="20"/>
+                    </StackPanel>
+
+                    <StackPanel Name="ButtonBuyMeepCashless">
+                        <Button Style="{StaticResource ButtonSuccess}" Height="70" Width="370">
+                            <TextBlock FontSize="25" Text="Comprar com Meep Cashless"></TextBlock>
+                        </Button>
+                        <GridSplitter Height="20"/>
+                    </StackPanel>
+
+                    <StackPanel Name="ButtonRechargeMeepCashless">
+                        <Button Style="{StaticResource ButtonSuccess}" Height="70" Width="370">
+                            <TextBlock FontSize="25" Text="Recarregar Meep Cashless"></TextBlock>
+                        </Button>
+                        <GridSplitter Height="20"/>
+                    </StackPanel>
+
+                    <StackPanel Name="ButtonActivateMeepCashless">
+                        <Button Style="{StaticResource ButtonSuccess}" Height="70" Width="370">
+                            <TextBlock FontSize="25" Text="Ativar Meep Cashless"></TextBlock>
+                        </Button>
+                        <GridSplitter Height="20"/>
+                    </StackPanel>
+                </StackPanel>
+
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
