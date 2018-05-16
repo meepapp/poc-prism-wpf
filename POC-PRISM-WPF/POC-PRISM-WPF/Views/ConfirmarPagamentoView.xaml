@@ -10,45 +10,107 @@
     <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Background="#ef4051" Orientation="Horizontal" Height="100" VerticalAlignment="Top">
-            <Image Source="../images/logo.png" HorizontalAlignment="Right"  Width="268" Margin="50,10,0,0"/>
+            <Image Source="../images/logo.png" HorizontalAlignment="Right"  Width="268" />
         </StackPanel>
-        <StackPanel Grid.Row="3" Background="#ef4051" Orientation="Horizontal" HorizontalAlignment="Center" Height="100" VerticalAlignment="Bottom" Width="1336">
-            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Width="1336">
-                <Separator Background="Transparent" Width="30"/>
-                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#ed911b" Content="LIMPAR PEDIDO" Width="250" Height="80"/>
-                <Separator Background="Transparent" Width="775"/>
-                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#30a658" Content="VER PEDIDO" Width="250" Height="80"/>
-            </StackPanel>
-        </StackPanel>
-        <Grid Grid.Row="1">
-        <StackPanel HorizontalAlignment="Stretch" Height="170">
-            <Label Style="{StaticResource TotalPg3}" HorizontalContentAlignment="Center" Content="Total:"/>
-            <Label FontSize="70" HorizontalAlignment="Center" Content="X"/>
-        </StackPanel>
+        <Grid Grid.Row="5" Background="#ef4051" Height="60" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="1" Style="{StaticResource ButtonsBottomMenu}" HorizontalAlignment="Left" Background="#ed911b" Content="LIMPAR PEDIDO" Width="200" Height="45"/>
+            <Button Grid.Column="3" Style="{StaticResource ButtonsBottomMenu}" HorizontalAlignment="Right" Background="#30a658" Content="VER PEDIDO" Width="200" Height="45"/>
         </Grid>
-        <StackPanel Grid.Row="2" Background="#FFEF4051" HorizontalAlignment="Center" Height="80" Margin="0,317,0,0" VerticalAlignment="Top" >
-            <Label FontWeight="DemiBold" Style="{StaticResource ResourceKey=TotalPg3-2}" Content="Confira aqui seu método de pagamento e sua lista de produtos." VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Width="1316" Margin="10,0" Height="80"/>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" Height="70" Margin="50,397,50,0" VerticalAlignment="Top">
-            <Label Style="{StaticResource LabelPg3}" Content="CARTÃO SELECIONADO" FontSize="23" />
-            <Label Style="{StaticResource LabelPg3}" Content="CRÉDITO" FontSize="23" />
-            <Button Style="{StaticResource MaterialDesignFlatButton}" Content="Alterar pagamento" Height="Auto" Width="255" Foreground="#FFD1362E" FontSize="25"/>
-            <GridSplitter Height="100"/>
-        </StackPanel>
-        <StackPanel Orientation="Horizontal" Height="70" Margin="50,467,-50,799">
-            <Image Source="../Images/card_4.png"></Image>
-            <GridSplitter Width="30" Background="Transparent"></GridSplitter>
-            <Image Source="../Images/card_3.png"></Image>
-            <GridSplitter Width="30" Background="Transparent"></GridSplitter>
-            <Image Source="../Images/card_2.png"></Image>
-            <GridSplitter Width="30" Background="Transparent"></GridSplitter>
-            <Image Source="../Images/card_1.png"></Image>
-        </StackPanel>
+        <Grid Grid.Row="1">
+            <StackPanel Grid.Row="0" Orientation="Vertical">
+                <Label Style="{StaticResource TotalPg3}" HorizontalContentAlignment="Center" Content="Total:"/>
+                <Label  FontSize="70" HorizontalAlignment="Center" Content="X" />
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="2" VerticalAlignment="Top">
+            <StackPanel Background="#ef4051" Height="80" >
+                <Label FontWeight="DemiBold" Style="{StaticResource ResourceKey=TotalPg3-2}" Content="Confira aqui seu método de pagamento e sua lista de produtos." VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="80"/>
+            </StackPanel>
+        </Grid>
+        <Grid Margin="30,0,0,0" Grid.Row="3" HorizontalAlignment="Left">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Height="70"  VerticalAlignment="Top">
+                <Label Style="{StaticResource LabelPg3}" Content="CARTÃO SELECIONADO" FontSize="23" />
+                <Label Style="{StaticResource LabelPg3}" Content="CRÉDITO" FontSize="23" />
+                <Button Style="{StaticResource MaterialDesignFlatButton}" Content="Alterar pagamento" Height="Auto" Width="255" Foreground="#FFD1362E" FontSize="25"/>
+                <GridSplitter Height="100"/>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Height="70" >
+                <Image Source="../Images/card_4.png"/>
+                <GridSplitter Width="30" Background="Transparent"/>
+                <Image Source="../Images/card_3.png"/>
+                <GridSplitter Width="30" Background="Transparent"/>
+                <Image Source="../Images/card_2.png"/>
+                <GridSplitter Width="30" Background="Transparent"/>
+                <Image Source="../Images/card_1.png"/>
+            </StackPanel>
+        </Grid>
+        <Grid Margin="30,0,0,0" Grid.Row="4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Content="Produtos" Style="{StaticResource TotalPg3}" FontSize="40"/>
+
+            <ListView Grid.Row="1">
+
+                <ListViewItem HorizontalContentAlignment="Stretch">
+
+                    <StackPanel Orientation="Horizontal">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0" HorizontalAlignment="Left" Orientation="Horizontal">
+                                <Ellipse Width="100" Height="100">
+                                    <Ellipse.Fill>
+                                        <ImageBrush ImageSource="../Images/pilsen.png" Stretch="Uniform"/>
+                                    </Ellipse.Fill>
+                                </Ellipse>
+
+                                <Label Style="{StaticResource LabelList}" Content="Brahma Pilsen Chopp 000ml"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="2" HorizontalAlignment="Right" Orientation="Horizontal">
+                                <Button Background="Transparent" BorderBrush="Transparent" Width="70" Height="70">
+                                    <Viewbox>
+                                        <Path Data="M17,13H7V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#f2ce43" Height="24" Stretch="Fill" Width="24" />
+                                    </Viewbox>
+                                </Button>
+                                <Label Content="10"  VerticalAlignment="Center" FontSize="35" FontWeight="Bold"/>
+                                <Button Background="Transparent" BorderBrush="Transparent" Width="70" Height="70">
+                                    <Viewbox >
+                                        <Canvas Width="24" Height="24">
+                                            <Path Data="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#30a658" Height="24" Stretch="Fill" Width="24" />
+                                        </Canvas>
+                                    </Viewbox>
+                                </Button>
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </ListViewItem>
+
+            </ListView>
+
+        </Grid>
 
     </Grid>
 </Page>

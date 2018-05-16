@@ -32,7 +32,6 @@ C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\bin\Debug\Prism.Autofac.Wpf.dll
 C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\bin\Debug\Prism.dll
 C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\bin\Debug\Prism.Wpf.dll
 C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\bin\Debug\System.Windows.Interactivity.dll
-C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.csprojResolveAssemblyReference.cache
 C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\Views\NavigationWindowView.baml
 C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\Views\ComprarWindowView.g.cs
 C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\Views\ConfirmarPagamentoView.g.cs
