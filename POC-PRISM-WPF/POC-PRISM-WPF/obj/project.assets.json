@@ -562,11 +562,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\POC-PRISM-WPF.csproj",
+      "projectUniqueName": "C:\\WS\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\POC-PRISM-WPF.csproj",
       "projectName": "POC-PRISM-WPF",
-      "projectPath": "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\POC-PRISM-WPF.csproj",
+      "projectPath": "C:\\WS\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\POC-PRISM-WPF.csproj",
       "packagesPath": "C:\\Users\\meep\\.nuget\\packages\\",
-      "outputPath": "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\obj\\",
+      "outputPath": "C:\\WS\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

@@ -9,7 +9,13 @@
       Title="VendaPageView" >
 
     <Grid Background="White">
-        <Grid Background="#ef4051" Height="140" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Background="#ef4051" Height="100" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
@@ -22,32 +28,220 @@
                 <Label  Style="{StaticResource LabelCompreAqui}" FontWeight="Bold" Width="Auto" VerticalContentAlignment="Center" Content="R$1243,40" Padding="5,0,20,0"/>
             </StackPanel>
         </Grid>
-        <Grid Background="#ef4051" Height="80" VerticalAlignment="Bottom">
-
-            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#556372" Content="SAIR" Width="200" Height="60"/>
+        <Grid Grid.Row="3" Background="#ef4051" Height="60" VerticalAlignment="Bottom">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0"  HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#556372" Content="SAIR" Width="200" Height="45"/>
                 <Separator Background="Transparent" Width="30"/>
-                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#ed911b" Content="LIMPAR PEDIDO" Width="200" Height="60"/>
+                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#ed911b" Content="LIMPAR PEDIDO" Width="200" Height="45"/>
                 <Separator Background="Transparent" Width="30"/>
-                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#30a658" Content="VER PEDIDO" Width="200" Height="60"/>
+                <Button Style="{StaticResource ButtonsBottomMenu}" Background="#30a658" Content="VER PEDIDO" Width="200" Height="45"/>
             </StackPanel>
         </Grid>
-        <StackPanel HorizontalAlignment="Left" Height="200" Margin="50,200,0,0" VerticalAlignment="Top" Width="400" Orientation="Horizontal">
-            <Button Style="{StaticResource RoundButtonTemplate}" Content="Comidas" Height="190" HorizontalAlignment="Left" Width="170"/>
-            <Separator Width="40" Background="Transparent"/>
-            <Button Style="{StaticResource RoundButtonTemplate}" Content="Bebidas" Height="190" HorizontalAlignment="Right" Width="170"/>
-        </StackPanel>
-        <ListBox Margin="10,405,10,123">
+        <Grid Grid.Row="1" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Margin="0,10,0,0" Grid.Column="0" HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto" Orientation="Horizontal">
+                <Separator Width="30" Background="Transparent"/>
+                <Button Style="{StaticResource RoundButtonTemplate}" Content="Comidas" Height="150" HorizontalAlignment="Left" Width="150"/>
+                <Separator Width="40" Background="Transparent"/>
+                <Button Style="{StaticResource RoundButtonTemplate}" Content="Bebidas" Height="150" HorizontalAlignment="Right" Width="150"/>
+            </StackPanel>
+        </Grid>
+        <ListBox Padding="20" Height="Auto" Width="Auto" Grid.ColumnSpan="4" Grid.Row="2">
+            
             <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel/>
                 </ItemsPanelTemplate>
             </ListBox.ItemsPanel>
-
-
-
+            <ListBoxItem>
+                <Canvas Background="Transparent" Height="475" Width="321">
+                    <Button Background="Transparent" BorderBrush="Transparent" Width="120" Height="120" Canvas.Left="210" Canvas.Top="0" Canvas.ZIndex="2">
+                        <Viewbox >
+                            <Canvas Width="24" Height="24">
+                                <Path Data="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#30a658" Height="24" Stretch="Fill" Width="24" />
+                            </Canvas>
+                        </Viewbox>
+                    </Button>
+                    <Ellipse Width="300" Height="300" Canvas.Top="20"
+                            Canvas.ZIndex="1" Canvas.Left="10">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="../Images/pilsen.png" Stretch="Uniform"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Button Background="Transparent" BorderBrush="Transparent" Width="120" Height="120" Canvas.Right="210" Canvas.Top="235" Canvas.ZIndex="2">
+                        <Viewbox>
+                            <Canvas Width="24" Height="24">
+                                <Path Data="M17,13H7V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#f2ce43" Height="24" Stretch="Fill" Width="24" />
+                            </Canvas>
+                        </Viewbox>
+                    </Button>
+                    <Label Content="10"  HorizontalContentAlignment="Center" FontSize="40" FontWeight="Bold" Canvas.Left="106" Canvas.Top="331" Width="112"/>
+                    <TextBlock Height="61" Canvas.Left="34" HorizontalAlignment="Center" FontWeight="DemiBold" TextWrapping="Wrap" FontSize="25" Text="Brahma Pilsen Chopp 000ml" Canvas.Top="399" Width="248"/>
+                </Canvas>
+            </ListBoxItem>
+            <ListBoxItem>
+                <Canvas Background="Transparent" Height="475" Width="321">
+                    <Button Background="Transparent" BorderBrush="Transparent" Width="120" Height="120" Canvas.Left="210" Canvas.Top="0" Canvas.ZIndex="2">
+                        <Viewbox >
+                            <Canvas Width="24" Height="24">
+                                <Path Data="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#30a658" Height="24" Stretch="Fill" Width="24" />
+                            </Canvas>
+                        </Viewbox>
+                    </Button>
+                    <Ellipse Width="300" Height="300" Canvas.Top="20"
+                            Canvas.ZIndex="1" Canvas.Left="10">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="../Images/pilsen.png" Stretch="Uniform"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Button Background="Transparent" BorderBrush="Transparent" Width="120" Height="120" Canvas.Right="210" Canvas.Top="235" Canvas.ZIndex="2">
+                        <Viewbox>
+                            <Canvas Width="24" Height="24">
+                                <Path Data="M17,13H7V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#f2ce43" Height="24" Stretch="Fill" Width="24" />
+                            </Canvas>
+                        </Viewbox>
+                    </Button>
+                    <Label Content="10"  HorizontalContentAlignment="Center" FontSize="40" FontWeight="Bold" Canvas.Left="106" Canvas.Top="331" Width="112"/>
+                    <TextBlock Height="61" Canvas.Left="34" HorizontalAlignment="Center" FontWeight="DemiBold" TextWrapping="Wrap" FontSize="25" Text="Brahma Pilsen Chopp 000ml" Canvas.Top="399" Width="248"/>
+                </Canvas>
+            </ListBoxItem>
+            <ListBoxItem>
+                <Canvas Background="Transparent" Height="475" Width="321">
+                    <Button Background="Transparent" BorderBrush="Transparent" Width="120" Height="120" Canvas.Left="210" Canvas.Top="0" Canvas.ZIndex="2">
+                        <Viewbox >
+                            <Canvas Width="24" Height="24">
+                                <Path Data="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#30a658" Height="24" Stretch="Fill" Width="24" />
+                            </Canvas>
+                        </Viewbox>
+                    </Button>
+                    <Ellipse Width="300" Height="300" Canvas.Top="20"
+                            Canvas.ZIndex="1" Canvas.Left="10">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="../Images/pilsen.png" Stretch="Uniform"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Button Background="Transparent" BorderBrush="Transparent" Width="120" Height="120" Canvas.Right="210" Canvas.Top="235" Canvas.ZIndex="2">
+                        <Viewbox>
+                            <Canvas Width="24" Height="24">
+                                <Path Data="M17,13H7V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#f2ce43" Height="24" Stretch="Fill" Width="24" />
+                            </Canvas>
+                        </Viewbox>
+                    </Button>
+                    <Label Content="10"  HorizontalContentAlignment="Center" FontSize="40" FontWeight="Bold" Canvas.Left="106" Canvas.Top="331" Width="112"/>
+                    <TextBlock Height="61" Canvas.Left="34" HorizontalAlignment="Center" FontWeight="DemiBold" TextWrapping="Wrap" FontSize="25" Text="Brahma Pilsen Chopp 000ml" Canvas.Top="399" Width="248"/>
+                </Canvas>
+            </ListBoxItem>
+            <ListBoxItem>
+                <Canvas Background="Transparent" Height="475" Width="321">
+                    <Button Background="Transparent" BorderBrush="Transparent" Width="120" Height="120" Canvas.Left="210" Canvas.Top="0" Canvas.ZIndex="2">
+                        <Viewbox >
+                            <Canvas Width="24" Height="24">
+                                <Path Data="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#30a658" Height="24" Stretch="Fill" Width="24" />
+                            </Canvas>
+                        </Viewbox>
+                    </Button>
+                    <Ellipse Width="300" Height="300" Canvas.Top="20"
+                            Canvas.ZIndex="1" Canvas.Left="10">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="../Images/pilsen.png" Stretch="Uniform"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Button Background="Transparent" BorderBrush="Transparent" Width="120" Height="120" Canvas.Right="210" Canvas.Top="235" Canvas.ZIndex="2">
+                        <Viewbox>
+                            <Canvas Width="24" Height="24">
+                                <Path Data="M17,13H7V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#f2ce43" Height="24" Stretch="Fill" Width="24" />
+                            </Canvas>
+                        </Viewbox>
+                    </Button>
+                    <Label Content="10"  HorizontalContentAlignment="Center" FontSize="40" FontWeight="Bold" Canvas.Left="106" Canvas.Top="331" Width="112"/>
+                    <TextBlock Height="61" Canvas.Left="34" HorizontalAlignment="Center" FontWeight="DemiBold" TextWrapping="Wrap" FontSize="25" Text="Brahma Pilsen Chopp 000ml" Canvas.Top="399" Width="248"/>
+                </Canvas>
+            </ListBoxItem>
+            <ListBoxItem>
+                <Canvas Background="Transparent" Height="475" Width="321">
+                    <Button Background="Transparent" BorderBrush="Transparent" Width="120" Height="120" Canvas.Left="210" Canvas.Top="0" Canvas.ZIndex="2">
+                        <Viewbox >
+                            <Canvas Width="24" Height="24">
+                                <Path Data="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#30a658" Height="24" Stretch="Fill" Width="24" />
+                            </Canvas>
+                        </Viewbox>
+                    </Button>
+                    <Ellipse Width="300" Height="300" Canvas.Top="20"
+                            Canvas.ZIndex="1" Canvas.Left="10">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="../Images/pilsen.png" Stretch="Uniform"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Button Background="Transparent" BorderBrush="Transparent" Width="120" Height="120" Canvas.Right="210" Canvas.Top="235" Canvas.ZIndex="2">
+                        <Viewbox>
+                            <Canvas Width="24" Height="24">
+                                <Path Data="M17,13H7V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#f2ce43" Height="24" Stretch="Fill" Width="24" />
+                            </Canvas>
+                        </Viewbox>
+                    </Button>
+                    <Label Content="10"  HorizontalContentAlignment="Center" FontSize="40" FontWeight="Bold" Canvas.Left="106" Canvas.Top="331" Width="112"/>
+                    <TextBlock Height="61" Canvas.Left="34" HorizontalAlignment="Center" FontWeight="DemiBold" TextWrapping="Wrap" FontSize="25" Text="Brahma Pilsen Chopp 000ml" Canvas.Top="399" Width="248"/>
+                </Canvas>
+            </ListBoxItem>
+            <ListBoxItem>
+                <Canvas Background="Transparent" Height="475" Width="321">
+                    <Button Background="Transparent" BorderBrush="Transparent" Width="120" Height="120" Canvas.Left="210" Canvas.Top="0" Canvas.ZIndex="2">
+                        <Viewbox >
+                            <Canvas Width="24" Height="24">
+                                <Path Data="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#30a658" Height="24" Stretch="Fill" Width="24" />
+                            </Canvas>
+                        </Viewbox>
+                    </Button>
+                    <Ellipse Width="300" Height="300" Canvas.Top="20"
+                            Canvas.ZIndex="1" Canvas.Left="10">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="../Images/pilsen.png" Stretch="Uniform"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Button Background="Transparent" BorderBrush="Transparent" Width="120" Height="120" Canvas.Right="210" Canvas.Top="235" Canvas.ZIndex="2">
+                        <Viewbox>
+                            <Canvas Width="24" Height="24">
+                                <Path Data="M17,13H7V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#f2ce43" Height="24" Stretch="Fill" Width="24" />
+                            </Canvas>
+                        </Viewbox>
+                    </Button>
+                    <Label Content="10"  HorizontalContentAlignment="Center" FontSize="40" FontWeight="Bold" Canvas.Left="106" Canvas.Top="331" Width="112"/>
+                    <TextBlock Height="61" Canvas.Left="34" HorizontalAlignment="Center" FontWeight="DemiBold" TextWrapping="Wrap" FontSize="25" Text="Brahma Pilsen Chopp 000ml" Canvas.Top="399" Width="248"/>
+                </Canvas>
+            </ListBoxItem>
+            <ListBoxItem>
+                <Canvas Background="Transparent" Height="475" Width="321">
+                    <Button Background="Transparent" BorderBrush="Transparent" Width="120" Height="120" Canvas.Left="210" Canvas.Top="0" Canvas.ZIndex="2">
+                        <Viewbox >
+                            <Canvas Width="24" Height="24">
+                                <Path Data="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#30a658" Height="24" Stretch="Fill" Width="24" />
+                            </Canvas>
+                        </Viewbox>
+                    </Button>
+                    <Ellipse Width="300" Height="300" Canvas.Top="20"
+                            Canvas.ZIndex="1" Canvas.Left="10">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="../Images/pilsen.png" Stretch="Uniform"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <Button Background="Transparent" BorderBrush="Transparent" Width="120" Height="120" Canvas.Right="210" Canvas.Top="235" Canvas.ZIndex="2">
+                        <Viewbox>
+                            <Canvas Width="24" Height="24">
+                                <Path Data="M17,13H7V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#f2ce43" Height="24" Stretch="Fill" Width="24" />
+                            </Canvas>
+                        </Viewbox>
+                    </Button>
+                    <Label Content="10"  HorizontalContentAlignment="Center" FontSize="40" FontWeight="Bold" Canvas.Left="106" Canvas.Top="331" Width="112"/>
+                    <TextBlock Height="61" Canvas.Left="34" HorizontalAlignment="Center" FontWeight="DemiBold" TextWrapping="Wrap" FontSize="25" Text="Brahma Pilsen Chopp 000ml" Canvas.Top="399" Width="248"/>
+                </Canvas>
+            </ListBoxItem>
         </ListBox>
-
-
     </Grid>
 </Page>

@@ -5,15 +5,19 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:POC_PRISM_WPF.Views"
       mc:Ignorable="d" 
-      d:DesignHeight="1336" d:DesignWidth="1336"
       Title="ConfirmarPagamentoView">
 
     <Grid Background="White">
-
-        <StackPanel Background="#ef4051" Orientation="Horizontal" HorizontalAlignment="Center" Height="140" VerticalAlignment="Top" Width="1336">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Background="#ef4051" Orientation="Horizontal" Height="100" VerticalAlignment="Top">
             <Image Source="../images/logo.png" HorizontalAlignment="Right"  Width="268" Margin="50,10,0,0"/>
         </StackPanel>
-        <StackPanel Background="#ef4051" Orientation="Horizontal" HorizontalAlignment="Center" Height="100" VerticalAlignment="Bottom" Width="1336">
+        <StackPanel Grid.Row="3" Background="#ef4051" Orientation="Horizontal" HorizontalAlignment="Center" Height="100" VerticalAlignment="Bottom" Width="1336">
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Width="1336">
                 <Separator Background="Transparent" Width="30"/>
                 <Button Style="{StaticResource ButtonsBottomMenu}" Background="#ed911b" Content="LIMPAR PEDIDO" Width="250" Height="80"/>
@@ -21,11 +25,13 @@
                 <Button Style="{StaticResource ButtonsBottomMenu}" Background="#30a658" Content="VER PEDIDO" Width="250" Height="80"/>
             </StackPanel>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Center" Height="172"  Width="1336" Margin="0,140,0,1024">
+        <Grid Grid.Row="1">
+        <StackPanel HorizontalAlignment="Stretch" Height="170">
             <Label Style="{StaticResource TotalPg3}" HorizontalContentAlignment="Center" Content="Total:"/>
             <Label FontSize="70" HorizontalAlignment="Center" Content="X"/>
         </StackPanel>
-        <StackPanel Background="#FFEF4051" HorizontalAlignment="Center" Height="80" Margin="0,317,0,0" VerticalAlignment="Top" Width="1336">
+        </Grid>
+        <StackPanel Grid.Row="2" Background="#FFEF4051" HorizontalAlignment="Center" Height="80" Margin="0,317,0,0" VerticalAlignment="Top" >
             <Label FontWeight="DemiBold" Style="{StaticResource ResourceKey=TotalPg3-2}" Content="Confira aqui seu método de pagamento e sua lista de produtos." VerticalContentAlignment="Center" HorizontalContentAlignment="Center"  Width="1316" Margin="10,0" Height="80"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal" Height="70" Margin="50,397,50,0" VerticalAlignment="Top">

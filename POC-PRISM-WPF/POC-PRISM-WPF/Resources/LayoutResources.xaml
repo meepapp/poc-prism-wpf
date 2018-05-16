@@ -40,10 +40,11 @@
         </Setter>
     </Style>
 
-    <Style x:Key="ButtonsBottomMenu" TargetType="Button">
-        <Setter Property="FontSize" Value="20px"/>
+    <Style x:Key="ButtonsBottomMenu" TargetType="{x:Type Button}">
+        <Setter Property="FontSize" Value="15px"/>
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="VerticalAlignment" Value="Center" />
     </Style>
@@ -95,7 +96,7 @@
     </Style>
 
     <Style x:Key="LabelPg3" TargetType="Label">
-        <Setter Property="FontWeight" />
+        <Setter Property="FontWeight" Value="Normal" />
         <Setter Property="FontSize" Value="5" />
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Height" Value="Auto"/>
