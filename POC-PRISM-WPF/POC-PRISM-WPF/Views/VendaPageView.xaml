@@ -24,8 +24,8 @@
             <Image Grid.Column="0" Source="../images/logo.png"  Width="268"/>
             <StackPanel Grid.Column="1" />
             <StackPanel Grid.Column="2" Orientation="Horizontal">
-                <Label  Style="{StaticResource LabelCompreAqui}" FontWeight="Bold" VerticalContentAlignment="Center" Content="Total:"/>
-                <Label  Style="{StaticResource LabelCompreAqui}" FontWeight="Bold" Width="Auto" VerticalContentAlignment="Center" Content="R$1243,40" Padding="5,0,20,0"/>
+                <Label  Style="{StaticResource LabelCompreAqui}" FontSize="45" FontWeight="Bold" VerticalContentAlignment="Center" Content="Total:"/>
+                <Label  Style="{StaticResource LabelCompreAqui}" FontWeight="Normal" Width="Auto" VerticalContentAlignment="Center" Content="100,00" Padding="5,0,20,0"/>
             </StackPanel>
         </Grid>
         <Grid Grid.Row="3" Background="#ef4051" Height="60" VerticalAlignment="Bottom">
@@ -34,9 +34,9 @@
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0"  HorizontalAlignment="Center" Orientation="Horizontal">
                 <Button Style="{StaticResource ButtonsBottomMenu}" Background="#556372" Content="SAIR" Width="200" Height="45"/>
-                <Separator Background="Transparent" Width="30"/>
+                <Separator Background="Transparent" Width="40"/>
                 <Button Style="{StaticResource ButtonsBottomMenu}" Background="#ed911b" Content="LIMPAR PEDIDO" Width="200" Height="45"/>
-                <Separator Background="Transparent" Width="30"/>
+                <Separator Background="Transparent" Width="40"/>
                 <Button Style="{StaticResource ButtonsBottomMenu}" Background="#30a658" Content="VER PEDIDO" Width="200" Height="45"/>
             </StackPanel>
         </Grid>
