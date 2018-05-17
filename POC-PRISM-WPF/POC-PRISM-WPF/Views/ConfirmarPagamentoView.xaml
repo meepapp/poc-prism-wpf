@@ -70,10 +70,10 @@
             </Grid.RowDefinitions>
             <Label Grid.Row="0" Content="Produtos" Style="{StaticResource TotalPg3}" FontSize="40"/>
 
-            <Grid Grid.Row="1" MaxWidth="1900" Margin="-2,0,2,0">
+            <Grid Grid.Row="1">
 
                 <ListView>
-                    <ListViewItem HorizontalContentAlignment="Stretch" MaxWidth="1900">
+                    <ListViewItem HorizontalContentAlignment="Stretch">
 
                         <StackPanel Orientation="Horizontal">
                             <Grid>
@@ -94,7 +94,7 @@
                                     </StackPanel>
                                 </Grid>
 
-                                <Grid Grid.Column="2" HorizontalAlignment="Right" Margin="1100,0,0,0">
+                                <Grid Grid.Column="2" HorizontalAlignment="Right">
                                     <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
                                         <Button Background="Transparent" BorderBrush="Transparent" Width="70" Height="70">
                                             <Viewbox>

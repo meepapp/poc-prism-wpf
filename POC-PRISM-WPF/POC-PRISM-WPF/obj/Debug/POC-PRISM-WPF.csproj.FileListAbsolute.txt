@@ -58,3 +58,4 @@ C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\Views\Controls\Passwor
 C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\Views\Controls\Search.g.cs
 C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\Views\Controls\Search.baml
 C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\Views\Controls\Password.baml
+C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.csprojResolveAssemblyReference.cache
