@@ -6,7 +6,7 @@
         Title="Meep" Height="1336" Width="768" WindowStyle="None" WindowState="Maximized"
         x:Name="RootNavigation"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Source="Controls/PaymentType.xaml">
+        Source="Controls/Password.xaml">
 
     <Window.Background>
         <ImageBrush ImageSource="/Images/bgmeep.jpg" Stretch="UniformToFill"/>
