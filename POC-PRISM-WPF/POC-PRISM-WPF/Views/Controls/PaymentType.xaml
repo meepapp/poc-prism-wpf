@@ -1,0 +1,59 @@
+﻿<Page x:Class="POC_PRISM_WPF.Views.Controls.PaymentType"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:POC_PRISM_WPF.Views.Controls"
+      mc:Ignorable="d" 
+      Title="PaymentType"
+      Height="650" Width="500">
+
+    <Grid Background="White" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Background="#ef4051">
+            <Label Height="80" Style="{StaticResource TotalPg3-2}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Content="Selecione sua forma de pagamento"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Grid Height="280">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="1" Style="{StaticResource LabelPg3}" Height="50" HorizontalAlignment="Center" Content="CARTÃO DE CRÉDITO" FontWeight="DemiBold" FontSize="23" />
+                <StackPanel HorizontalAlignment="Center" Grid.Row="2" Orientation="Horizontal" Height="80" >
+                    <Image Source="../../Images/card_4.png" />
+                    <Separator Width="20" BorderBrush="Transparent"/>
+                    <Image Source="../../Images/card_3.png" />
+                    <Separator Width="20" BorderBrush="Transparent"/>
+                    <Image Source="../../Images/card_2.png" />
+                    <Separator Width="20" BorderBrush="Transparent"/>
+                    <Image Source="../../Images/card_1.png" />
+                </StackPanel>
+            </Grid>
+
+        </StackPanel>
+        <Border Width="400" Background="#f1f1f1" Grid.Row="2" />
+        <StackPanel Grid.Row="4">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="1" Style="{StaticResource LabelPg3}" Foreground="Black" Height="50" HorizontalAlignment="Center" Content="CARTÃO DE DÉBITO" FontWeight="DemiBold" FontSize="23" />
+                <StackPanel HorizontalAlignment="Center" Grid.Row="2" Orientation="Horizontal" Height="80" >
+                    <Image Source="../../Images/card_4.png" />
+                    <Border Width="20" BorderBrush="Transparent"/>
+                    <Image Source="../../Images/card_3.png" />
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>

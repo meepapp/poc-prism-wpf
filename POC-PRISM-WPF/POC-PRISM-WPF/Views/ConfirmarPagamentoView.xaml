@@ -16,6 +16,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+        
         <StackPanel Grid.Row="0" Background="#ef4051" Orientation="Horizontal" Height="100" VerticalAlignment="Top">
             <Image Source="../images/logo.png" HorizontalAlignment="Right"  Width="268" />
         </StackPanel>
@@ -53,10 +54,13 @@
                 <GridSplitter Height="100"/>
             </StackPanel>
             <StackPanel Grid.Row="1" Orientation="Horizontal" Height="70" >
-                <Image Source="../Images/card_4.png" Margin="0,0,20,0"/>
-                <Image Source="../Images/card_3.png" Margin="0,0,20,0"/>
-                <Image Source="../Images/card_2.png" Margin="0,0,20,0"/>
-                <Image Source="../Images/card_1.png" Margin="0,0,20,0"/>
+                <Image Source="../Images/card_4.png" />
+                <Separator Width="20" BorderBrush="Transparent"/>
+                <Image Source="../Images/card_3.png" />
+                <Separator Width="20" BorderBrush="Transparent"/>
+                <Image Source="../Images/card_2.png" />
+                <Separator Width="20" BorderBrush="Transparent"/>
+                <Image Source="../Images/card_1.png" />
             </StackPanel>
         </Grid>
         <Grid Margin="30,0,0,0" Grid.Row="4">

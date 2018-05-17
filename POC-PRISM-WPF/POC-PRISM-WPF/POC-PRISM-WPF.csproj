@@ -59,6 +59,15 @@
     <Compile Include="Views\ConfirmarPagamentoView.xaml.cs">
       <DependentUpon>ConfirmarPagamentoView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Controls\Password.xaml.cs">
+      <DependentUpon>Password.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\PaymentType.xaml.cs">
+      <DependentUpon>PaymentType.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\Search.xaml.cs">
+      <DependentUpon>Search.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\VendaPageView.xaml.cs">
       <DependentUpon>VendaPageView.xaml</DependentUpon>
     </Compile>
@@ -71,6 +80,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ConfirmarPagamentoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\Password.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\PaymentType.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\Search.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

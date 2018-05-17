@@ -52,4 +52,9 @@ C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.csproj.C
 C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.csproj.CopyComplete
 C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.exe
 C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.pdb
-C:\ws\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.csprojResolveAssemblyReference.cache
+C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\Views\Controls\PaymentType.g.cs
+C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\Views\Controls\PaymentType.baml
+C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\Views\Controls\Password.g.cs
+C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\Views\Controls\Search.g.cs
+C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\Views\Controls\Search.baml
+C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\Views\Controls\Password.baml
