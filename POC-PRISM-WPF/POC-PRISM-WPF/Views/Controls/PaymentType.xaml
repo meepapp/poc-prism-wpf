@@ -29,11 +29,11 @@
                 <Label Grid.Row="1" Style="{StaticResource LabelPg3}" Height="50" HorizontalAlignment="Center" Content="CARTÃO DE CRÉDITO" FontWeight="DemiBold" FontSize="23" />
                 <StackPanel HorizontalAlignment="Center" Grid.Row="2" Orientation="Horizontal" Height="80" >
                     <Image Source="../../Images/card_4.png" />
-                    <Separator Width="20" BorderBrush="Transparent"/>
+                    <Border Width="20" BorderBrush="Transparent"/>
                     <Image Source="../../Images/card_3.png" />
-                    <Separator Width="20" BorderBrush="Transparent"/>
+                    <Border Width="20" BorderBrush="Transparent"/>
                     <Image Source="../../Images/card_2.png" />
-                    <Separator Width="20" BorderBrush="Transparent"/>
+                    <Border Width="20" BorderBrush="Transparent"/>
                     <Image Source="../../Images/card_1.png" />
                 </StackPanel>
             </Grid>
