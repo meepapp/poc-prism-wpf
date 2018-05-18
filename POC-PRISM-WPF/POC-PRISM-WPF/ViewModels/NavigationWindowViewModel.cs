@@ -1,9 +1,13 @@
-﻿using Prism.Mvvm;
+﻿using Prism.Commands;
+using Prism.Mvvm;
+using Prism.Regions;
 
 namespace POC_PRISM_WPF.ViewModels
 {
-    public class MainWindowViewModel : BindableBase
+    public class NavigationWindowViewModel : BindableBase
     {
+        private readonly IRegionManager _regionManager;
+
         private string _title = "Prism Application";
         public string Title
         {
@@ -11,9 +15,19 @@ namespace POC_PRISM_WPF.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
-        public MainWindowViewModel()
-        {
+        public DelegateCommand<string> NavigateCommand { get; private set; }
 
+        public NavigationWindowViewModel(IRegionManager regionManager)
+        {
+            _regionManager = regionManager;
+
+            NavigateCommand = new DelegateCommand<string>(Navigate);
+        }
+
+        private void Navigate(string navigatePath)
+        {
+            if(navigatePath != null)
+                _regionManager.RequestNavigate("", navigatePath);
         }
     }
 }

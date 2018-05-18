@@ -56,6 +56,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModels\NavigationWindowViewModel.cs" />
     <Compile Include="Views\ConfirmarPagamentoView.xaml.cs">
       <DependentUpon>ConfirmarPagamentoView.xaml</DependentUpon>
     </Compile>
@@ -104,7 +105,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Bootstrapper.cs" />
-    <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="Views\ComprarWindowView.xaml.cs">
       <DependentUpon>ComprarWindowView.xaml</DependentUpon>
     </Compile>
@@ -190,6 +190,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ModuloListaProdutos\ModuloListaProdutos.csproj">
+      <Project>{deda78e0-adfa-432f-879d-ed0648477f21}</Project>
+      <Name>ModuloListaProdutos</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
