@@ -16,7 +16,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        
+
         <StackPanel Grid.Row="0" Background="#ef4051" Orientation="Horizontal" Height="100" VerticalAlignment="Top">
             <Image Source="../images/logo.png" HorizontalAlignment="Right"  Width="268" />
         </StackPanel>
@@ -63,47 +63,54 @@
                 <Image Source="../Images/card_1.png"/>
             </StackPanel>
         </Grid>
-        <Grid Margin="30,0,0,0" Grid.Row="4">
+        <Grid Margin="30,0,30,0" Grid.Row="4">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Label Grid.Row="0" Content="Produtos" Style="{StaticResource TotalPg3}" FontSize="40"/>
-         
-            <Grid Grid.Row="1" Background="White" Height="Auto" VerticalAlignment="Center">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
 
-                <ListView Grid.Column="0">
-                    <ListViewItem HorizontalContentAlignment="Stretch">
-                        <StackPanel  HorizontalAlignment="Left" Orientation="Horizontal">
-                            <Ellipse Width="100" Height="100">
-                                <Ellipse.Fill>
-                                    <ImageBrush ImageSource="../Images/pilsen.png" Stretch="Uniform"/>
-                                </Ellipse.Fill>
-                            </Ellipse>
-                            <Label Style="{StaticResource LabelList}" Content="Brahma Pilsen Chopp 000ml"/>
-                        </StackPanel>
+            <Grid Grid.Row="1" Background="White" Height="Auto" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+                <ListView HorizontalContentAlignment="Stretch">
+                    <ListViewItem HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">
+                        <DockPanel HorizontalAlignment="Stretch">
+                            <Grid HorizontalAlignment="Stretch">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0" HorizontalAlignment="Left" Orientation="Horizontal">
+                                    <Ellipse Width="100" Height="100">
+                                        <Ellipse.Fill>
+                                            <ImageBrush ImageSource="../Images/pilsen.png" Stretch="Uniform"/>
+                                        </Ellipse.Fill>
+                                    </Ellipse>
+                                    <Label Style="{StaticResource LabelList}" Content="Brahma Pilsen Chopp 000ml"/>
+                                </StackPanel>
+                                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                                    <Button Background="Transparent" BorderBrush="Transparent" Width="70" Height="70">
+                                        <Viewbox>
+                                            <Path Data="M17,13H7V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#f2ce43" Height="24" Stretch="Fill" Width="24" />
+                                        </Viewbox>
+                                    </Button>
+                                    <Label Content="10"  VerticalAlignment="Center" FontSize="35" FontWeight="Bold"/>
+                                    <Button Background="Transparent" BorderBrush="Transparent" Width="70" Height="70">
+                                        <Viewbox >
+                                            <Canvas Width="24" Height="24">
+                                                <Path Data="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#30a658" Height="24" Stretch="Fill" Width="24" />
+                                            </Canvas>
+                                        </Viewbox>
+                                    </Button>
+                                </StackPanel>
+                            </Grid>
+                        </DockPanel>
+
                     </ListViewItem>
                 </ListView>
 
                 <StackPanel Grid.Column="2" HorizontalAlignment="Right" Orientation="Horizontal" Margin="0,0,30,0">
-                    <Button Background="Transparent" BorderBrush="Transparent" Width="70" Height="70">
-                        <Viewbox>
-                            <Path Data="M17,13H7V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#f2ce43" Height="24" Stretch="Fill" Width="24" />
-                        </Viewbox>
-                    </Button>
-                    <Label Content="10"  VerticalAlignment="Center" FontSize="35" FontWeight="Bold"/>
-                    <Button Background="Transparent" BorderBrush="Transparent" Width="70" Height="70">
-                        <Viewbox >
-                            <Canvas Width="24" Height="24">
-                                <Path Data="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" Fill="#30a658" Height="24" Stretch="Fill" Width="24" />
-                            </Canvas>
-                        </Viewbox>
-                    </Button>
+
                 </StackPanel>
             </Grid>
 

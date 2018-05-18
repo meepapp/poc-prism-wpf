@@ -16,5 +16,5 @@ C:\ws\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\App.xaml
 74-1488933109
 Resources\LayoutResources.xaml;Views\ComprarWindowView.xaml;Views\ConfirmarPagamentoView.xaml;Views\Controls\Password.xaml;Views\Controls\PaymentType.xaml;Views\Controls\Search.xaml;Views\NavigationWindowView.xaml;Views\VendaPageView.xaml;
 
-False
+True
 

@@ -4,6 +4,8 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:POC_PRISM_WPF"
+      xmlns:prism="http://prismlibrary.com/"
+      prism:ViewModelLocator.AutoWireViewModel="True"
       mc:Ignorable="d" 
       Title="Comprar - Meep">
 
@@ -30,8 +32,9 @@
                 <StackPanel VerticalAlignment="Center">
 
                     <StackPanel Name="ButtonBuy">
-                        <Button Style="{StaticResource ButtonSuccess}" Height="70" Width="370">
-                            <TextBlock FontSize="25" Text="Comprar"></TextBlock>
+                        <Button Command="NavigationCommands.GoToPage" CommandParameter="VendaPageView.xaml"
+                        Style="{StaticResource ButtonSuccess}" Height="70" Width="370" Click="Button_Click"
+                                FontSize="25" Content="Comprar">
                         </Button>
                         <GridSplitter Height="20"/>
                     </StackPanel>
