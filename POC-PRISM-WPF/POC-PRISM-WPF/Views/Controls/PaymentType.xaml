@@ -46,7 +46,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Label Grid.Row="1" Style="{StaticResource LabelPg3}" Height="50" HorizontalAlignment="Center" Content="CARTÃO DE DÉBITO" FontWeight="DemiBold" FontSize="23" Foreground="Black" />
+                <Label Grid.Row="1" Style="{StaticResource LabelPg3}" Height="50" HorizontalAlignment="Center" Content="CARTÃO DE DÉBITO" FontWeight="DemiBold" FontSize="23" />
                 <StackPanel HorizontalAlignment="Center" Grid.Row="2" Orientation="Horizontal" Height="80" >
                     <Image Source="../../Images/card_4.png" />
                     <Border Width="20" BorderBrush="Transparent"/>

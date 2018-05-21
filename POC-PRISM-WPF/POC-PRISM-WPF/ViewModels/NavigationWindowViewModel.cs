@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-﻿using Prism.Mvvm;
-
-namespace POC_PRISM_WPF.ViewModels
-{
-    public class NavigationWindowViewModel : BindableBase
-    {
-        private string _title = "Prism Application";
-        public string Title
-        {
-            get { return _title; }
-            set { SetProperty(ref _title, value); }
-        }
-
-        public NavigationWindowViewModel()
-        {
-
-        }
-    }
-}
-=======
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Regions;
@@ -52,4 +31,3 @@ namespace POC_PRISM_WPF.ViewModels
         }
     }
 }
->>>>>>> cd57c6e8a40179ec46a289dd62b1be7f374fd8d6
