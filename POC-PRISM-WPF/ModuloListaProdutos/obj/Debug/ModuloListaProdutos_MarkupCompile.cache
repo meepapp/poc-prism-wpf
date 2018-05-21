@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\ws\poc-prism-wpf\POC-PRISM-WPF\ModuloListaProdutos\obj\Debug\
+C:\WS\poc-prism-wpf\POC-PRISM-WPF\ModuloListaProdutos\obj\Debug\
 ModuloListaProdutos
 none
 false
@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 1-439560384
 
-6-1581783432
+10-176518662
 702024128239
 Views\ViewA.xaml;
 
-False
+True
 
