@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using POC_PRISM_WPF;
 using POC_PRISM_WPF.Views;
 using System;
 using System.Diagnostics;

@@ -9,8 +9,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using MaterialDesignThemes.Wpf;
-using MaterialDesignThemes.Wpf.Transitions;
 using POC_PRISM_WPF.Views;
 using System;
 using System.Diagnostics;
