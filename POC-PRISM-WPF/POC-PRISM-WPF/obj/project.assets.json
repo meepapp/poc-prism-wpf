@@ -77,6 +77,19 @@
           "lib/net45/Prism.Wpf.dll": {},
           "lib/net45/System.Windows.Interactivity.dll": {}
         }
+      },
+      "ModuloListaProdutos/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "Prism.Autofac": "6.3.0"
+        },
+        "compile": {
+          "bin/placeholder/ModuloListaProdutos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ModuloListaProdutos.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.6.1/win": {
@@ -154,6 +167,19 @@
         "runtime": {
           "lib/net45/Prism.Wpf.dll": {},
           "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "ModuloListaProdutos/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "Prism.Autofac": "6.3.0"
+        },
+        "compile": {
+          "bin/placeholder/ModuloListaProdutos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ModuloListaProdutos.dll": {}
         }
       }
     },
@@ -233,6 +259,19 @@
           "lib/net45/Prism.Wpf.dll": {},
           "lib/net45/System.Windows.Interactivity.dll": {}
         }
+      },
+      "ModuloListaProdutos/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "Prism.Autofac": "6.3.0"
+        },
+        "compile": {
+          "bin/placeholder/ModuloListaProdutos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ModuloListaProdutos.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.6.1/win-x86": {
@@ -310,6 +349,19 @@
         "runtime": {
           "lib/net45/Prism.Wpf.dll": {},
           "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "ModuloListaProdutos/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "Prism.Autofac": "6.3.0"
+        },
+        "compile": {
+          "bin/placeholder/ModuloListaProdutos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ModuloListaProdutos.dll": {}
         }
       }
     }
@@ -545,12 +597,18 @@
         "prism.wpf.6.3.0.nupkg.sha512",
         "prism.wpf.nuspec"
       ]
+    },
+    "ModuloListaProdutos/1.0.0": {
+      "type": "project",
+      "path": "../ModuloListaProdutos/ModuloListaProdutos.csproj",
+      "msbuildProject": "../ModuloListaProdutos/ModuloListaProdutos.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.6.1": [
       "MaterialDesignColors >= 1.1.3",
       "MaterialDesignThemes >= 2.4.0.1044",
+      "ModuloListaProdutos >= 1.0.0",
       "Prism.Autofac >= 6.3.0",
       "Prism.Wpf >= 6.3.0"
     ]
@@ -562,11 +620,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\WS\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\POC-PRISM-WPF.csproj",
+      "projectUniqueName": "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\POC-PRISM-WPF.csproj",
       "projectName": "POC-PRISM-WPF",
-      "projectPath": "C:\\WS\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\POC-PRISM-WPF.csproj",
+      "projectPath": "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\POC-PRISM-WPF.csproj",
       "packagesPath": "C:\\Users\\meep\\.nuget\\packages\\",
-      "outputPath": "C:\\WS\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\obj\\",
+      "outputPath": "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -586,7 +644,11 @@
       },
       "frameworks": {
         "net461": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\ModuloListaProdutos\\ModuloListaProdutos.csproj": {
+              "projectPath": "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\ModuloListaProdutos\\ModuloListaProdutos.csproj"
+            }
+          }
         }
       }
     },

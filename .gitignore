@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/POC-PRISM-WPF/.vs/POC-PRISM-WPF/v15/Server/sqlite3/storage.ide-shm
+/POC-PRISM-WPF/.vs/POC-PRISM-WPF/v15/Server/sqlite3/storage.ide-wal

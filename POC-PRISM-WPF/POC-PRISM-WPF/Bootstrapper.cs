@@ -3,6 +3,7 @@ using System.Windows;
 using Prism.Modularity;
 using Autofac;
 using Prism.Autofac;
+using ModuloListaProdutos;
 
 namespace POC_PRISM_WPF
 {
@@ -12,11 +13,11 @@ namespace POC_PRISM_WPF
         {
             return Container.Resolve<NavigationWindowView>();
         }
-    
+        
         protected override void ConfigureModuleCatalog()
         {
             var moduleCatalog = (ModuleCatalog)ModuleCatalog;
-            //moduleCatalog.AddModule(typeof(YOUR_MODULE));
+            moduleCatalog.AddModule(typeof(ModuloListaProdutosModule));
         }
     }
 }
