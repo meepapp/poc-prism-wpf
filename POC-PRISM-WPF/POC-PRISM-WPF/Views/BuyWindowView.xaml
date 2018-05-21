@@ -8,36 +8,43 @@
     <Window.Background>
         <ImageBrush ImageSource="/Images/bgmeep.jpg" Stretch="UniformToFill"/>
     </Window.Background>
-    <Grid>
-        <Grid  Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="600"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-   
-            <Grid VerticalAlignment="Center" Grid.Row="1">
-                <StackPanel VerticalAlignment="Stretch">
-                    <Image HorizontalAlignment="Center" Source="../Images/logo.png" Height="120" Width="310"  />
-                    <GridSplitter Height="100"/>
-                    <Label  Style="{StaticResource LabelCompreAqui}" Foreground="white" Content="COMPRE AQUI O SEU PRODUTO" FontSize="20" Height="62" />
-                    <GridSplitter Height="7"/>
-                </StackPanel>
+    <Window.Resources>
+        <Style TargetType="TabItem">
+            <Setter Property="Header" Value="{Binding DataContext.Title}" />
+        </Style>
+    </Window.Resources>
+    <DockPanel>
+        <Grid>
+            <Grid  Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="600"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
 
-            </Grid>
-            <Grid VerticalAlignment="Center" Grid.Row="2">
-                <StackPanel VerticalAlignment="Center">
-
-                    <StackPanel Name="ButtonBuy">
-                        <Button Command="{Binding NavigateCommand}"  CommandParameter="VendaPageView.xaml"
-                        Style="{StaticResource ButtonSuccess}" Height="70" Width="370" 
-                                FontSize="25" Content="Comprar">
-                        </Button>
-                        <GridSplitter Height="20"/>
+                <Grid VerticalAlignment="Center" Grid.Row="1">
+                    <StackPanel VerticalAlignment="Stretch">
+                        <Image HorizontalAlignment="Center" Source="../Images/logo.png" Height="120" Width="310"  />
+                        <GridSplitter Height="100"/>
+                        <Label  Style="{StaticResource LabelCompreAqui}" Foreground="white" Content="COMPRE AQUI O SEU PRODUTO" FontSize="20" Height="62" />
+                        <GridSplitter Height="7"/>
                     </StackPanel>
-                </StackPanel>
 
+                </Grid>
+                <Grid VerticalAlignment="Center" Grid.Row="2">
+                    <StackPanel VerticalAlignment="Center">
+
+                        <StackPanel Name="ButtonBuy">
+                            <Button Command="{Binding NavigateCommand}"  CommandParameter="VendaWindow"
+                        Style="{StaticResource ButtonSuccess}" Height="70" Width="370" 
+                        Click="Button_Click"  FontSize="25" >Comprar</Button>
+                            <GridSplitter Height="20"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                </Grid>
             </Grid>
+            <ContentControl prism:RegionManager.RegionName="ContentRegion"/>
         </Grid>
-    </Grid>
+    </DockPanel>
 </Window>

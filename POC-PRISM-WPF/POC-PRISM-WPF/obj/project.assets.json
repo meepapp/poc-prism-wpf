@@ -620,11 +620,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\WS\\Poc-prism\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\POC-PRISM-WPF.csproj",
+      "projectUniqueName": "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\POC-PRISM-WPF.csproj",
       "projectName": "POC-PRISM-WPF",
-      "projectPath": "C:\\WS\\Poc-prism\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\POC-PRISM-WPF.csproj",
+      "projectPath": "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\POC-PRISM-WPF.csproj",
       "packagesPath": "C:\\Users\\meep\\.nuget\\packages\\",
-      "outputPath": "C:\\WS\\Poc-prism\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\obj\\",
+      "outputPath": "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\POC-PRISM-WPF\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -645,8 +645,8 @@
       "frameworks": {
         "net461": {
           "projectReferences": {
-            "C:\\WS\\Poc-prism\\poc-prism-wpf\\POC-PRISM-WPF\\ModuloListaProdutos\\ModuloListaProdutos.csproj": {
-              "projectPath": "C:\\WS\\Poc-prism\\poc-prism-wpf\\POC-PRISM-WPF\\ModuloListaProdutos\\ModuloListaProdutos.csproj"
+            "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\ModuloListaProdutos\\ModuloListaProdutos.csproj": {
+              "projectPath": "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\ModuloListaProdutos\\ModuloListaProdutos.csproj"
             }
           }
         }

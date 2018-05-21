@@ -4,17 +4,17 @@
 library
 C#
 .cs
-C:\WS\Poc-prism\poc-prism-wpf\POC-PRISM-WPF\ModuloListaProdutos\obj\Debug\
+C:\ws\poc-prism-wpf\POC-PRISM-WPF\ModuloListaProdutos\obj\Debug\
 ModuloListaProdutos
 none
 false
 DEBUG;TRACE
 
-1-439560384
+1-285975896
 
-6-1581783432
+6-999155118
 702024128239
-Views\ViewA.xaml;
+Views\VendaWindow.xaml;
 
 False
 

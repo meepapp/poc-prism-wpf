@@ -13,7 +13,6 @@ namespace POC_PRISM_WPF
         {
             return Container.Resolve<BuyWindowView>();
         }
-        
         protected override void ConfigureModuleCatalog()
         {
             var moduleCatalog = (ModuleCatalog)ModuleCatalog;

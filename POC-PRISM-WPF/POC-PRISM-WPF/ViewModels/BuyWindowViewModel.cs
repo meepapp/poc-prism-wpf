@@ -27,7 +27,7 @@ namespace POC_PRISM_WPF.ViewModels
         private void Navigate(string navigatePath)
         {
             if(navigatePath != null)
-                _regionManager.RequestNavigate("", navigatePath);
+                _regionManager.RequestNavigate("ContentRegion", navigatePath);
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using ModuloListaProdutos.Views;
 using Prism.Modularity;
 using Prism.Regions;
-using System;
 using Autofac;
 using Prism.Autofac;
 
@@ -9,8 +8,8 @@ namespace ModuloListaProdutos
 {
     public class ModuloListaProdutosModule : IModule
     {
-        private IRegionManager _regionManager;
-        private ContainerBuilder _builder;
+        IRegionManager _regionManager;
+        ContainerBuilder _builder;
 
         public ModuloListaProdutosModule(ContainerBuilder builder, IRegionManager regionManager)
         {
@@ -20,7 +19,10 @@ namespace ModuloListaProdutos
 
         public void Initialize()
         {
-            _builder.RegisterTypeForNavigation<ViewA>();
+            //_builder.RegisterTypeForNavigation<VendaWindow>();
+            _builder.RegisterType<VendaWindow>().Named<object>("MinhaVendaWidnow");
+
+            //_regionManager.RequestNavigate("ContentRegion", "VendaWindow");
         }
     }
 }
