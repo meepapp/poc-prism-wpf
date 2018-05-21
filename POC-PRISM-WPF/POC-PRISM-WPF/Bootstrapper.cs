@@ -11,7 +11,7 @@ namespace POC_PRISM_WPF
     {
         protected override DependencyObject CreateShell()
         {
-            return Container.Resolve<NavigationWindowView>();
+            return Container.Resolve<BuyWindowView>();
         }
         
         protected override void ConfigureModuleCatalog()

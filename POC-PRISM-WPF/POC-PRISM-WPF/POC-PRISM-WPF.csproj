@@ -56,10 +56,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ViewModels\NavigationWindowViewModel.cs" />
-    <Compile Include="Views\ConfirmarPagamentoView.xaml.cs">
-      <DependentUpon>ConfirmarPagamentoView.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="ViewModels\BuyWindowViewModel.cs" />
+    <Compile Include="ViewModels\VendaWindowViewModel.cs" />
+    <Compile Include="ViewModels\ConfirmarPagamentoWindowViewModel.cs" />
     <Compile Include="Views\Controls\Password.xaml.cs">
       <DependentUpon>Password.xaml</DependentUpon>
     </Compile>
@@ -69,18 +68,13 @@
     <Compile Include="Views\Controls\Search.xaml.cs">
       <DependentUpon>Search.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\VendaPageView.xaml.cs">
-      <DependentUpon>VendaPageView.xaml</DependentUpon>
+    <Compile Include="Views\VendaWindowView.xaml.cs">
+      <DependentUpon>VendaWindowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ConfirmarPagamentoWindowView.xaml.cs">
+      <DependentUpon>ConfirmarPagamentoWindowView.xaml</DependentUpon>
     </Compile>
     <Page Include="Resources\LayoutResources.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\ComprarWindowView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\ConfirmarPagamentoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -96,7 +90,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\NavigationWindowView.xaml">
+    <Page Include="Views\BuyWindowView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -105,14 +99,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Bootstrapper.cs" />
-    <Compile Include="Views\ComprarWindowView.xaml.cs">
-      <DependentUpon>ComprarWindowView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\NavigationWindowView.xaml.cs">
-      <DependentUpon>NavigationWindowView.xaml</DependentUpon>
+    <Compile Include="Views\BuyWindowView.xaml.cs">
+      <DependentUpon>BuyWindowView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\VendaPageView.xaml">
+    <Page Include="Views\VendaWindowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ConfirmarPagamentoWindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

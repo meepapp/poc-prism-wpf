@@ -4,7 +4,7 @@ using Prism.Regions;
 
 namespace POC_PRISM_WPF.ViewModels
 {
-    public class NavigationWindowViewModel : BindableBase
+    public class BuyWindowViewModel : BindableBase
     {
         private readonly IRegionManager _regionManager;
 
@@ -17,7 +17,7 @@ namespace POC_PRISM_WPF.ViewModels
 
         public DelegateCommand<string> NavigateCommand { get; private set; }
 
-        public NavigationWindowViewModel(IRegionManager regionManager)
+        public BuyWindowViewModel(IRegionManager regionManager)
         {
             _regionManager = regionManager;
 

@@ -44,12 +44,12 @@ namespace POC_PRISM_WPF.Views {
     /// <summary>
     /// NavigationWindowView
     /// </summary>
-    public partial class NavigationWindowView : System.Windows.Navigation.NavigationWindow, System.Windows.Markup.IComponentConnector {
+    public partial class NavigationWindowView : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 7 "..\..\..\Views\NavigationWindowView.xaml"
+        #line 33 "..\..\..\Views\NavigationWindowView.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal POC_PRISM_WPF.Views.NavigationWindowView RootNavigation;
+        internal System.Windows.Controls.StackPanel ButtonBuy;
         
         #line default
         #line hidden
@@ -85,7 +85,15 @@ namespace POC_PRISM_WPF.Views {
             switch (connectionId)
             {
             case 1:
-            this.RootNavigation = ((POC_PRISM_WPF.Views.NavigationWindowView)(target));
+            this.ButtonBuy = ((System.Windows.Controls.StackPanel)(target));
+            return;
+            case 2:
+            
+            #line 35 "..\..\..\Views\NavigationWindowView.xaml"
+            ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click);
+            
+            #line default
+            #line hidden
             return;
             }
             this._contentLoaded = true;

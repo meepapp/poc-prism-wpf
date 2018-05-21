@@ -320,11 +320,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\ModuloListaProdutos\\ModuloListaProdutos.csproj",
+      "projectUniqueName": "C:\\WS\\Poc-prism\\poc-prism-wpf\\POC-PRISM-WPF\\ModuloListaProdutos\\ModuloListaProdutos.csproj",
       "projectName": "ModuloListaProdutos",
-      "projectPath": "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\ModuloListaProdutos\\ModuloListaProdutos.csproj",
+      "projectPath": "C:\\WS\\Poc-prism\\poc-prism-wpf\\POC-PRISM-WPF\\ModuloListaProdutos\\ModuloListaProdutos.csproj",
       "packagesPath": "C:\\Users\\meep\\.nuget\\packages\\",
-      "outputPath": "C:\\ws\\poc-prism-wpf\\POC-PRISM-WPF\\ModuloListaProdutos\\obj\\",
+      "outputPath": "C:\\WS\\Poc-prism\\poc-prism-wpf\\POC-PRISM-WPF\\ModuloListaProdutos\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
