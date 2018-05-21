@@ -58,3 +58,4 @@ C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.csproj.C
 C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.csproj.CopyComplete
 C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.exe
 C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.pdb
+C:\WS\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.csprojResolveAssemblyReference.cache

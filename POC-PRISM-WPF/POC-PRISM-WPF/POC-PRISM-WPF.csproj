@@ -56,6 +56,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModels\ComprarWindowViewModel.cs" />
     <Compile Include="Views\ConfirmarPagamentoView.xaml.cs">
       <DependentUpon>ConfirmarPagamentoView.xaml</DependentUpon>
     </Compile>
@@ -104,7 +105,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Bootstrapper.cs" />
-    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="ViewModels\NavigationWindowViewModel.cs" />
     <Compile Include="Views\ComprarWindowView.xaml.cs">
       <DependentUpon>ComprarWindowView.xaml</DependentUpon>
     </Compile>

@@ -2,7 +2,7 @@
 
 namespace POC_PRISM_WPF.ViewModels
 {
-    public class MainWindowViewModel : BindableBase
+    public class NavigationWindowViewModel : BindableBase
     {
         private string _title = "Prism Application";
         public string Title
@@ -11,7 +11,7 @@ namespace POC_PRISM_WPF.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
-        public MainWindowViewModel()
+        public NavigationWindowViewModel()
         {
 
         }

@@ -32,7 +32,7 @@
                 <StackPanel VerticalAlignment="Center">
 
                     <StackPanel Name="ButtonBuy">
-                        <Button Command="NavigationCommands.GoToPage" CommandParameter="VendaPageView.xaml"
+                        <Button Command="{Binding NavigateToBuy}" CommandParameter="VendaPageView.xaml"
                         Style="{StaticResource ButtonSuccess}" Height="70" Width="370" Click="Button_Click"
                                 FontSize="25" Content="Comprar">
                         </Button>
