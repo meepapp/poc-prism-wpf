@@ -29,3 +29,9 @@ C:\Users\meep\Desktop\Meep20\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF
 C:\Users\meep\Desktop\Meep20\POC-PRISM-WPF\POC-PRISM-WPF\bin\Debug\ModuleViews.dll
 C:\Users\meep\Desktop\Meep20\POC-PRISM-WPF\POC-PRISM-WPF\bin\Debug\ModuleViews.pdb
 C:\Users\meep\Desktop\Meep20\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.csprojResolveAssemblyReference.cache
+C:\Users\meep\Desktop\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.csprojResolveAssemblyReference.cache
+C:\Users\meep\Desktop\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\App.g.cs
+C:\Users\meep\Desktop\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF_MarkupCompile.cache
+C:\Users\meep\Desktop\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF_MarkupCompile.lref
+C:\Users\meep\Desktop\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.exe
+C:\Users\meep\Desktop\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\POC-PRISM-WPF.pdb
