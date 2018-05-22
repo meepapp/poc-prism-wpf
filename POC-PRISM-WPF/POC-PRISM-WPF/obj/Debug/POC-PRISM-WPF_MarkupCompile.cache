@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\WS\Poc-prism\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\
+C:\Users\meep\Desktop\Meep20\POC-PRISM-WPF\POC-PRISM-WPF\obj\Debug\
 POC_PRISM_WPF
 none
 false
 DEBUG;TRACE
-C:\WS\Poc-prism\poc-prism-wpf\POC-PRISM-WPF\POC-PRISM-WPF\App.xaml
-7-871542546
+C:\Users\meep\Desktop\Meep20\POC-PRISM-WPF\POC-PRISM-WPF\App.xaml
+2-288741428
 
-14426822264
-751131106263
-Resources\LayoutResources.xaml;Views\Controls\Password.xaml;Views\Controls\PaymentType.xaml;Views\Controls\Search.xaml;Views\BuyWindowView.xaml;Views\VendaWindowView.xaml;Views\ConfirmarPagamentoWindowView.xaml;
+7-1990057228
+77-930368483
+Resources\LayoutResources.xaml;Views\MainWindow.xaml;
 
 False
 

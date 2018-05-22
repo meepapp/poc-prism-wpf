@@ -1,23 +1,28 @@
 ﻿using POC_PRISM_WPF.Views;
 using System.Windows;
 using Prism.Modularity;
-using Autofac;
-using Prism.Autofac;
-using ModuloListaProdutos;
+using Microsoft.Practices.Unity;
+using Prism.Unity;
+using ModuleViews;
 
 namespace POC_PRISM_WPF
 {
-    class Bootstrapper : AutofacBootstrapper
+    class Bootstrapper : UnityBootstrapper
     {
         protected override DependencyObject CreateShell()
         {
-            return Container.Resolve<BuyWindowView>();
+            return Container.Resolve<MainWindow>();
         }
-        
+
+        protected override void InitializeShell()
+        {
+            Application.Current.MainWindow.Show();
+        }
+
         protected override void ConfigureModuleCatalog()
         {
             var moduleCatalog = (ModuleCatalog)ModuleCatalog;
-            moduleCatalog.AddModule(typeof(ModuloListaProdutosModule));
+            moduleCatalog.AddModule(typeof(ModuleViewsModule));
         }
     }
 }

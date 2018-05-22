@@ -1,0 +1,52 @@
+﻿<Window x:Class="POC_PRISM_WPF.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="{Binding Title}" Height="1336" Width="768" WindowStyle="None" WindowState="Maximized"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+         TextElement.FontWeight="Regular"
+         TextElement.FontSize="13"
+         TextOptions.TextFormattingMode="Ideal"
+         TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        >
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/bgmeep.jpg" Stretch="UniformToFill"/>
+    </Window.Background>
+    <DockPanel>
+        <Grid>
+            <Grid Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="600"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid  VerticalAlignment="Center" Grid.Row="1">
+                    <StackPanel VerticalAlignment="Stretch">
+                        <Image HorizontalAlignment="Center" Source="../Images/logo.png" Height="203" Width="527"  />
+                        <GridSplitter Height="100"/>
+                        <Label HorizontalAlignment="Center"  Style="{StaticResource LabelCompreAqui}" Foreground="white" Content="COMPRE AQUI O SEU PRODUTO" FontSize="20" Height="62" />
+                        <GridSplitter Height="7"/>
+                    </StackPanel>
+
+                </Grid>
+                <Grid VerticalAlignment="Center" Grid.Row="2">
+                    <StackPanel VerticalAlignment="Center">
+
+                        <StackPanel HorizontalAlignment="Center" Name="ButtonBuy">
+                            <Button  Command="{Binding NavigateCommand}"  CommandParameter="BuyWindowView"
+                        Style="{StaticResource ButtonSuccess}" Height="70" Width="370" 
+                                FontSize="25" Content="Comprar" Click="Button_Click">
+                            </Button>
+                            <GridSplitter Height="20"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                </Grid>
+            </Grid>
+            <ContentControl prism:RegionManager.RegionName="ContentRegion"/>
+        </Grid>
+    </DockPanel>
+</Window>
